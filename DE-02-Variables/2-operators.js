@@ -168,6 +168,118 @@ console.log(yuzler);
 
 
 
+//*===============================================================
+//*                   KARSILASTIRMA OPERATORLERI
+//* ==============================================================
+
+const sayi1=4;
+
+console.log(sayi1==4);//true
+console.log(sayi1===4);//true
+console.log(sayi1=="4");//true
+console.log(sayi1==="4");//false
+
+console.log(sayi1!=4);//false
+console.log(sayi1!="4");//false
+
+console.log(sayi1>4);
+console.log(sayi1<=4);
+
+
+//* ===================================================
+
+//*                        TIP DONUSUMLERI
+//* ====================================================
+
+const para=Number('1000') + '900'
+console.log(para);
+
+console.log(Number('1000') + Number('900'));  //0
+console.log(Number(null));  // 0
+console.log(Number(true));  // 1
+
+
+
+//* ===============================================
+//*                   MANTIKSAL OPERATORLER
+//* ===============================================
+
+
+//? TRUE
+console.log(Boolean(5));//true
+console.log(Boolean(-5));//true
+console.log(Boolean(-15.5));//true
+
+//? ici dolu olunca ne oldugu onemli degil(asagidakiler haric) boolean parantezinde
+//? true dur
+
+
+//? 5 falsy
+console.log(Boolean(0)); //false
+console.log(Boolean(null));//false
+console.log(Boolean(""));//false
+console.log(Boolean(undefined));//false
+console.log(Boolean(NaN));//false
+
+
+
+const v1=false|| 0|| 12.6 ||true || false || null
+console.log(v1);
+
+//? veya da ilk true yu gorunce onu verir.Boolean lar true dur.hiclik, sifir gibi bazi lari haric
+
+
+const v2= false || 0 || null || undefined || NaN
+console.log(v2);
+
+//? hepsi fals ise en sonuncuyu verir
+
+
+const v3 = 5 && true && true && 0 && ""
+console.log(v3);
+
+//? and hep kotuyu arar.buldugu ilk false da onu verir
+
+
+const v4= 6 && true && 12.5 && 7
+console.log(v4);
+
+//? hepsi true ise en sona kadar kotuyu arar eger bulamazsa mecburen en sonki true yu verir
+
+
+console.log(!v4);  // true nun degili false
+console.log(!v2);  //  false un degili true
+
+
+
+
+console.log(Number("0x11")); // 17 x=hexa=16
+
+
+
+
+
+console.log(Number("0b101")); // 5 b=binary 2lik taban
+
+
+
+
+
+
+console.log(Number("0o11")); // 9 o=octal=8
+
+
+
+
+
+
+
+console.log(Number("sayi")); //NAN
+
+
+
+
+
 
 
 
