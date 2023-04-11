@@ -13,33 +13,35 @@
 // console.log("-------------------------------------");
 
 
-// const sayi1= prompt("1.sayiyi giriniz");
-// const islem= prompt("+,-,*,/ islemlerinden birini giriniz");
-// const sayi2= Number(prompt("2.sayiyi giriniz"));
 
+//? prompt dan gelen direkt sayi olarak algilansin istersek basina + veya Number parantezine alalim prompt umuzu
 
-// let sonuc = 0;  // global de tanimlamamiz lazim.
-
-//? suslu parantez sart degil.
+//? suslu parantez sart degil tek satir bisey yapacaksak.iki satirli bir islemde sart ama
 //? kapatalimki surekli istemesin bizden
 //? iflerde ; if else den sonra gelmez.yaoilmak istenenden sonra gelir
 
-// if (islem == "+") 
-//   sonuc = sayi1 + sayi2;
-//  else if (islem == "-") 
-//   sonuc = sayi1 - sayi2;
-//  else if (islem == "*") {
-//   sonuc = sayi1 * sayi2;
-// } else if (islem == "/") {
-//   if (sayi2 != 0) {
-//     sonuc = sayi1 / sayi2;
-//   } else {
-//     alert("payda 0 olamaz");
-//   }
-// } else {
-//   alert("yanlış işlem girdiniz");
-// }
-// console.log(sonuc);
+const sayi1= +prompt("1.sayiyi giriniz");
+const islem= prompt("+,-,*,/ islemlerinden birini giriniz");
+const sayi2= Number(prompt("2.sayiyi giriniz"));
+
+let sonuc = 0;  // global de tanimlamamiz lazim.
+
+if (islem == "+") 
+  sonuc = sayi1 + sayi2;
+ else if (islem == "-") 
+  sonuc = sayi1 - sayi2;
+ else if (islem == "*") {
+  sonuc = sayi1 * sayi2;
+} else if (islem == "/") {
+  if (sayi2 != 0) {
+    sonuc = sayi1 / sayi2;
+  } else {
+    alert("payda 0 olamaz");
+  }
+} else {
+  alert("yanlış işlem girdiniz");
+}
+console.log(sonuc);
 
 
 
@@ -59,7 +61,7 @@ else{
 
 //! ternary (2.yol.sadece if ve else durumu varsa o zaman tercih edilir)
 
-(yas >= 20 && cinsiyet == 'erkek' && saglik == true)? console.log('askerlik yapabilir'):console.log('yapamaz');
+// (yas >= 20 && cinsiyet == 'erkek' && saglik == true)? console.log('askerlik yapabilir'):console.log('yapamaz');
 
 
 
@@ -123,7 +125,7 @@ console.log(zamliMaas);
 //?Ornek:10 aylık maasınız borcunuzdan 5000 ve üstü kadar fazlaysa kredi alabilirsiniz, aksi durumda alamazsınız
 
 const Schuld=+prompt('borcunuzu giriniz lutfen')
-const Gehalt=+prompt('maasinizi giriniz lutfen')
+const Gehalt=+prompt('lutfen maasinizi giriniz lutfen')
 
 //? ya bir degiskene atariz ya da console.log icine yazariz
 console.log(Gehalt*10 - Schuld >= 5000? 'kredi alabilir🥳':'kredi alamaz 😥');

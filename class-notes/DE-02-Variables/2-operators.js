@@ -10,6 +10,8 @@ const peynir= 200;
 
 
 let toplam=sucuk+cola+peynir;
+
+// toplamin degisme ihtimali var.block icinde birde schokolade ekleyebiliriz mesela.o nedenle let ile yazdik
 console.log(toplam);
 
 //*bunu const ile yapsak degistiremezdik.
@@ -47,6 +49,9 @@ const s1=5;
 const s2="7";
 
 console.log(s1+s2); //57
+
+
+
 //* çıkarma işleminde verilerden biri number ise diğeri tırnaklı number olsa bile çıkarma yapar
 console.log(s1-s2); //-2
 
@@ -54,6 +59,9 @@ console.log(s1-s2); //-2
 //? bu asagidakini algilamaz.yaziyi sayi olarak algilamaz
 const s3="iki"
 console.log(s1-s3);
+
+
+
 
 
 const dogumTarihi=1979;
@@ -78,28 +86,28 @@ let b=a++;
 console.log(a);  //7
 console.log(b);  //6
 
-
+//* a++ hemen o anda islemez dolayisi ile b= a nin ilk hali olur. sonra a yi yazdirirken  a nin arttirilmis halini verir.sagdaki + larda boyle.soluna , önune + koyarsak hemen isler
 
 console.log("******************************************");
 
 //? onune + koyarsak hemen arttirir.ama yukaridakini daha cok kullanacagiz
 let c=10;
 
-console.log(++c);
+console.log(++c); //11
 console.log(c);
 
 
 let e=33;
-console.log(--e);
+console.log(--e);//32
 console.log(e--);// bir ustte 32 ye dustu.o nedenle guncelin ilk halini verir.asagida ikinci kez yazdrnca 1 eksilmis halini verir
-console.log(e);
+console.log(e);//31. yukaridakinin sonucu burda veriyor
 
 
 
 //! e yi 5 arttir.(en sonki halinden devam eder)
 
 e+=5
-console.log(e);
+console.log(e); //36.son haline 5 eklenmis durum
 
 
 //! e yi carp
@@ -157,7 +165,7 @@ console.log(birler);
 
 //? onlar basamagini bulmak icin(5)
 
-const onlar=Math.trunc(number/10)%10
+const onlar=Math.trunc(number/10%10)
 console.log(onlar);
 
 
@@ -177,7 +185,7 @@ const sayi1=4;
 console.log(sayi1==4);//true
 console.log(sayi1===4);//true
 console.log(sayi1=="4");//true
-console.log(sayi1==="4");//false
+console.log(sayi1==="4");//false.3 = type na da bakr
 
 console.log(sayi1!=4);//false
 console.log(sayi1!="4");//false
@@ -191,12 +199,22 @@ console.log(sayi1<=4);
 //*                        TIP DONUSUMLERI
 //* ====================================================
 
-const para=Number('1000') + '900'
+const para=Number('1000') + '900' ; //1000900   number ve string toplanirsa string daha baskin o.i sonucta yanyana string olarak yazar.
 console.log(para);
 
-console.log(Number('1000') + Number('900'));  //0
+
+const para=Number('1000') + Number('900'); //1900
+console.log(para);
+
+
+console.log(Number('1000') + Number('900'));  //1900
+
+//*False donduren ozel haller
+console.log(Number(""));  // 0
 console.log(Number(null));  // 0
 console.log(Number(true));  // 1
+
+// olumsuzluklari sayiya dondurursen 0 verir.true yu numbera dondurursek 1 verir
 
 
 

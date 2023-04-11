@@ -55,6 +55,10 @@ console.log(7+sayi1);
 
 //! bir string ile number toplanirsa aslinda toplama yapmaz, onlari iki kelime gibi yanyana yazar
 
+
+
+isim='ipek';
+console.log(typeof isim);
 //! değişken tanımlama keyword u kullanmasak bile JS derleyicisi otomatik  onu "var" olarak tanımlar
 
 
@@ -79,6 +83,10 @@ console.log(sayi2);
 
 console.log("*********************************************************");
 
+
+//!!! global scope /  block scope / function scope
+
+//?global suslu yok.ortada heryerden, icerden disardan erisilir gorulur.
 
 var ilk="GLOBAL";
 console.log(ilk);
