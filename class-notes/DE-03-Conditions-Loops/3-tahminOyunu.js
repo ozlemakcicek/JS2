@@ -20,17 +20,16 @@
 //      }
 //      else if (tahmin<rastgele)
 //     {
-//         console.log('ARTTIR');
+//         console.log('ARTTIR📈');
 //         console.log(hak,'hakkiniz kaldi');
 //     }
 //     else{
-//         console.log('AZALT');
+//         console.log('AZALT📉');
 //         console.log(hak,'hakkiniz kaldi');
 //     }
 
-    
+    // if(hak==0){
+// console.log('üzgunuz bilemediniz');
+// }  //icerde de disarda da yazabiliriz
 // }
 
-// if(hak==0){
-// console.log('üzgunuz bilemediniz');
-// }

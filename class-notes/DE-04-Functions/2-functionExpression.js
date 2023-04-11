@@ -51,6 +51,45 @@ alert(buyukBul(3,5,9))
 
 
 
+//* Örnek3: bir fonksiyon içerisinde başka bir fonksiyon çağırılabilir
+//**********************************************************/
+
+
+const usAl=function(s1,s2){
+return s1**s2
+
+}
+
+
+const cevreBul=function(s1,s2){
+return (s1+s2)*2
+    
+}
+
+
+const alanBul=function(s1,s2){
+
+    return s1*s2
+}
+
+// 4.bir genel islem fonksiyonu yaziyoruz
+const hesapla=function(secim,v1,v2){
+let sonuc;  // orta mali olmasin diye yaziyoruz.Herkes gorsun diye disarda tanimliyorz
+
+
+    if(secim=="alan"){
+     sonuc= alanBul(v1,v2)
+    }else if(secim=="cevre"){
+     sonuc= cevreBul(v1,v2)
+    }else if(secim=="us"){
+     sonuc= usAl(v1,v2)
+    }
+ return sonuc
+}
+
+console.log("alanin sonucu..:",hesapla("alan",3,5));  
+console.log("cevrenin sonucu..:", hesapla("cevre",3,5)); 
+console.log("us almanin sonucu..:",hesapla("us",3,5)); 
 
 
 
