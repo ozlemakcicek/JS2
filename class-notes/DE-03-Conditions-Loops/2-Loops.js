@@ -6,9 +6,9 @@
 
 //? ornek: ekrana 10 kere merhaba yazdirin
 
-// for(let index = 1; index <= 10; index++){
-//     console.log(index, 'MERHABA');
-// }
+for(let index = 1; index <= 10; index++){
+    console.log(index, 'MERHABA');
+}
 
 
 

@@ -12,7 +12,7 @@ console.log("************ 1- FUNC DECLARATION *************");
 
 //? Fonksiyonun tanimlanmasi
 
-//yazdir()
+//yazdir() // yukarida da asagida da cagirabiliyoruz fonksiyonu
 
 function yazdir(){
     console.log('e daha daha nasilsiniz');
@@ -22,15 +22,23 @@ yazdir()        // call veya invoke (fonksiyonu cagirmak)
 
 //*fonksiyonu cagirmayi asagida veya yukarida cagirablrsn
 
+
+
+
+
 //**/ Ornek2********** PARAMETRELI FONKSIYON ************************** */
 
 function adYazdir(ad, ikinciAd, soyad){
-    console.log(ad,ikinciAd,soyad);
+    console.log(soyad,ad,ikinciAd);
 }
 
 adYazdir('kubilay','ozlem','NIHAL')
 
 //?kendi kendine fonksiyon isini halletti.return e gerek kalmadi.simdi return lu bir ornek yapacagiz
+
+
+
+
 
 
 //*  Ornek3************* parametreli, donus degerli****************
@@ -50,6 +58,7 @@ const fatih= yasHesapla('fatih', 2000)
 console.log(ipek, yunus, fatih);
 
 console.log((ipek+yunus+fatih)/3);
+
 
 
 
