@@ -72,7 +72,7 @@ const alanBul=function(s1,s2){
     return s1*s2
 }
 
-// 4.bir genel islem fonksiyonu yaziyoruz
+// bu 3 fonksiyonun disinda 4.bir genel islem fonksiyonu yaziyoruz
 const hesapla=function(secim,v1,v2){
 let sonuc;  // orta mali olmasin diye yaziyoruz.Herkes gorsun diye disarda tanimliyorz
 

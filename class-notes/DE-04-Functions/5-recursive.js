@@ -26,7 +26,7 @@ console.log("ilk 6 terim toplami..:", toplam);
 const toplamlar=(n)=>{
     if(n<1) {
         return n
-    } else return toplamlar(n-1) + n;
+    } else {return toplamlar(n-1) + n;
 };
 alert(toplamlar(12));
 

@@ -126,3 +126,11 @@ console.log(araba);
 //! 2.Yol
 // const araba=arabalar.join('')
 // console.log(araba);
+
+
+//! for loop=> Bir dizi üzerinde iteration yapmanın orjinal yollarından biridir.	
+//? forEach=> Bir dizi üzerinde iteration yapmak için daha az kod içeren daha yeni bir yoldur.
+//! for loop=>Performansta daha hızlıdır.	
+//? forEach=> Performansta geleneksel döngüden daha yavaştır.
+//! for loop=> Break ifadesi döngüden çıkmak için kullanılabilir.	
+//? forEach=> Break ifadesi, geri arama işlevi nedeniyle kullanılamaz.
