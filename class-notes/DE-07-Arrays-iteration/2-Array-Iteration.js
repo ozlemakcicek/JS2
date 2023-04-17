@@ -7,9 +7,9 @@
 //*----------ORNEK-----------
 
 const prices1=[100, 250, 50, 90]
-prices1.forEach((a)=> console.log(a))// sondaki ; hata verir silmek lazim onu
-// ic ice iki parantez olu forEach() yonteminde.icine rastgele bir harf yazmak gerekir.
-//diziyi degiskene atamdan birakirsak kalici degistirmedigi icin goremeyiz.degisken sart
+prices1.forEach((a)=> console.log(a))// sondaki ();) hata verir silmek lazim onu
+// ic ice iki parantez olur array methodlarinda.icine rastgele bir harf yazmak gerekir.
+//diziyi degiskene atamadan birakirsak kalici degistirmedigi icin goremeyiz.degisken sart
 let toplam=0;
 prices1.forEach((a)=> console.log(toplam+=a))
 //toplami forEach() e yaptirmak cok da mantikli olmuyor tek tek yaziyor her gezinmesinde.bunu reduce yontemi ile tek seferde yapariz
