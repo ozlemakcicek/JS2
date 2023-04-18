@@ -261,3 +261,45 @@ const yeni= people.filter((kisi)=>kisi.job=='developer')//filter if gorevini yap
    console.log(people.reduce((toplam,eleman)=>toplam+eleman.age,0)/people.length); 
 
    // burdaki 0 toplamin baslangic degeri=0 icin
+
+
+
+
+   //?? people object indeki tüm salary leri yazdiran(döngü kullanilmali)
+   const people3 = {
+     person1: {
+       name: "Can",
+       surname: "Canan",
+       dob: "1990",
+       job: "developer",
+       salary: "140000",
+       drivingLicense: true,
+     },
+     person2: {
+       name: "John",
+       surname: "Sweet",
+       dob: "1990",
+       job: "tester",
+       salary: "110000",
+       drivingLicense: false,
+     },
+     person3: {
+       name: "Steve",
+       surname: "Job",
+       dob: "2000",
+       job: "developer",
+       salary: "90000",
+       drivingLicense: true,
+     },
+   };
+
+   //! FOR - IN kullanılabilir, index sonuçta. Ama for of kullanılamaz , dizilerde verileri almak için itere eden for of object te çalışmaz
+//!!!!JavaScript'te, iterable protokolü uygulamadıkça Objects iterable değildir. Bu nedenle, bir object in özellikleri üzerinde iterate yapmak için for…of (forEach, map, filter da) kullanamazsınız. sadece klasik for döngüsü ve for in kullanılabilir
+
+for (let i in people3){
+  console.log(i);   //icdeki objekt isimlerini,keyleri dondurur.people1,people2,..
+
+  console.log(people3[i].salary); // nokta ile yazmayi burda algilamaz.[] li yazimi destekler.Burdaki [i] index demek degil index gibi algiliyor ama object lerde index calismiyor.for in in dizilerdeki haline benzer yaziyoruz
+  console.log(people3['person1'].salary);// sadece person1 deki salary yi istedik
+  console.log(people3[i].name);
+}
