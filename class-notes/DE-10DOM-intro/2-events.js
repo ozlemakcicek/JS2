@@ -124,3 +124,14 @@ buton.style.color='red'
 }
 
 //!aynı element e (merhaba yazısına mouse ile gelince badi renk değiştirdin demiştik) hem onclick hem onmouseover atandığında, önce onmouseover  sonra onclick i çalıştırırsanız sorun olmaz, tersi durumda onclick baskın old için onmouseover çalışmaz
+
+
+// ? METHOD-4 (sadece JAVASCRIPT te yazılır- addEventListener())  2.yol
+// ? ---------------------------------------------------------------
+buton.addEventListener("click", () => {
+  document.querySelector("body").style.backgroundImage =
+    "linear-gradient(to right, purple, gray)";
+  buton.textContent = "SEARCH";
+  buton.style.fontSize = "30px";
+  header.style.color = "red";
+});
