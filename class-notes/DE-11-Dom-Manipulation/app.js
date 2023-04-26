@@ -136,12 +136,14 @@ document.querySelector(".sil").onclick =()=>{
 }
 
 
+//******************************************************** */
+
 
 //! klavyedeki keyCode lari kullanarak kod yazma
-
+//* ilk kez eventlerden birinin icine herhngi bir parametre yazdik.nedeni;console da klavyenn rakamsal kodlarini gormek icin bu sekilde
 // dil=input
 dil.onkeydown=(tus)=>{
-  console.log(tus.keyCode);
+  console.log(tus.keyCode);  // bu sekilde keyCode unu getir dedik
 
 
   //!enter=13 e basilirsa
@@ -149,7 +151,7 @@ dil.onkeydown=(tus)=>{
   //*eğer delete =46 veya control=17  veya shift=16 tuşuna basılırsa sil butonu tetiklensin
 
   if (tus.keyCode === 13) {
-    document.querySelector(".ekle").click();
+    document.querySelector(".ekle").click();  // click , onclick i tetikler
   }
   if(tus.keyCode===16){
     document.querySelector('.sil').click()
