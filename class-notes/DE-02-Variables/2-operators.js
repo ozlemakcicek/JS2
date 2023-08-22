@@ -59,17 +59,20 @@ console.log(s1-s2); //-2
 
 //? bu asagidakini algilamaz.yaziyi sayi olarak algilamaz
 const s3="iki"
-console.log(s1-s3);
+console.log(s1-s3); //NaN verir console da:Not a number demek
 
 
 
+//! JS de camelCase olarak yazilir
 
+//* Ashley 43 yasindadir yazdiralim kisa ve uzun yol ile
 
 const dogumTarihi=1979;
 const name1="Ashley";
 console.log(name1 +" " + (2023-dogumTarihi) + " " + "yasindadir");
 
-//! bunu template literals(backticks) ile yazalim
+//! bunu template literals(backticks) ile yazalim.
+//* Bosluklari otomatik algilar. + lara gerek yok
 
 console.log(`${name1} ${2023-dogumTarihi} yasindadir`);
 
@@ -83,11 +86,14 @@ console.log("ilk", a++, a)
 //?  normal yazimda + yerine komma da kullanilabilir.arttirma ilk yazinca degilde ikincide isler.a++ deyince islemi kendi isler ama bir sonrasina gosterir. a++ deyxince 5 yazar.bi sonrakinde a yazinca 1 arttirmis olur ve 6 olur
 
 
-let b=a++;
+let b=a++; //en son a 6 idi yukarida ve b=a++ deyince hemen burda 6 olan a arttirilm,az hala 6 dir o. ama a nin kendisini yazdiorirsak artik 7 olmus olur
+
 console.log(a);  //7
 console.log(b);  //6
 
-//* a++ hemen o anda islemez dolayisi ile b= a nin ilk hali olur. sonra a yi yazdirirken  a nin arttirilmis halini verir.sagdaki + larda boyle.soluna , önune + koyarsak hemen isler
+//* a++ hemen o anda islemez dolayisi ile b= a nin ilk hali olur. sonra a yi yazdirirken  a nin arttirilmis halini verir.sagdaki + larda boyle.soluna , önune + koyarsak hemen isler.ayni sey - icin de gecerli
+
+
 
 console.log("******************************************");
 
@@ -118,7 +124,8 @@ e*=10
 console.log(e);  //e*10=360
 
 
-//! us alma ve carpma
+//! CARPMA VE US ALMA
+
 //? alan ve cevre
 
 const pi=3.14;
@@ -129,7 +136,7 @@ console.log(alan);
 
 
 const cevre=2*pi*r
-console.log(cevre);
+console.log(cevre);//18.84
 
 
 //! bazi fonksiyonlar
@@ -144,10 +151,10 @@ console.log(cevre);
 
 //?sonuclara gore yapiyor.log lari 28.26 ve 18.84 gozuktu console da.trunc ve floor ayni sonucu verir pozitif sayilarda. negatiflerde fark eder.
 
-console.log(Math.floor(cevre));
-console.log(Math.ceil(cevre));
-console.log(Math.trunc(cevre));
-console.log(Math.round(cevre));
+console.log(Math.floor(cevre));  //18 
+console.log(Math.ceil(cevre));   //19
+console.log(Math.trunc(cevre));  //18
+console.log(Math.round(cevre));  //19
 
 
 
@@ -158,7 +165,8 @@ console.log(Math.floor(ab));
 
 
 //*********************** MOD ALMA ************** */
-//?birler basamagini bulmak icin
+//?birler basamagini bulmak icin; 10 a bolumu kullanilir
+
 const number=456;
 const birler=number%10
 console.log(birler);
@@ -166,7 +174,7 @@ console.log(birler);
 
 //? onlar basamagini bulmak icin(5)
 
-const onlar=Math.trunc(number/10%10)
+const onlar=Math.trunc(number/10)%10
 console.log(onlar);
 
 
