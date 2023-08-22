@@ -11,7 +11,8 @@ const peynir= 200;
 
 let toplam=sucuk+cola+peynir;
 
-// toplamin degisme ihtimali var.block icinde birde schokolade ekleyebiliriz mesela.o nedenle let ile yazdik
+// toplamin degisme ihtimali var.block icinde birde schokolade ekleyebiliriz mesela.o nedenle let ile yazdik.Ayni sekilde const ile toplami yazsaydik toplam++ da calismazdi.o yuzden let ile yazdik
+
 console.log(toplam);
 
 //*bunu const ile yapsak degistiremezdik.
@@ -36,7 +37,7 @@ console.log(toplam);
 const ad="esra"
 const soyad="fatih"
 
-console.log( "adim ve soyadim:" + ad+ " " + soyad);
+console.log( "adim ve soyadim:" + ad + " " + soyad);  // kelimelerin arasini acmak icin " " bos string yazariz.
 
 //! bunu backtick(``) ile de yapabilirsin.+ kullanilmaz onun yerine ${variable ismi} seklinde kullanilir
 
@@ -203,7 +204,7 @@ const para=Number('1000') + '900' ; //1000900   number ve string toplanirsa stri
 console.log(para);
 
 
-const para=Number('1000') + Number('900'); //1900
+const para2=Number('1000') + Number('900'); //1900
 console.log(para);
 
 

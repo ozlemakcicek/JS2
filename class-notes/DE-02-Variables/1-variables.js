@@ -70,11 +70,12 @@ console.log(typeof isim);
 
 // ===================  VAR VERİ TİPİ ===============================
 //? VAR ile bir değişken tanımlandığında LET de olduğu gibi değeri sonradan değiştirilebilir.
-//! VAR değişkenleri tanımlandığı yere göre global olarak veya fonksiyon içerisinde erişilebilir.
+//! VAR değişkenleri tanımlandığı yere göre global olarak veya fonksiyon içerisinde erişilebilir.Heryerden erisilir.
 //* - Değişken fonksiyon içerisinde tanımlandı ise ancak o fonksiyonda erişilebilir (Function-scoped).
 //? - Eğer, değişken fonksiyonların dışında tanımlandı ise tüm her yerden erişilebilir. (Global-scoped).
 //! Günümüzde programcılar global değişken gerekmedikçe VAR ile değişken tanımlamayı seçmemektedir.
-
+// basinda herhangibir degisken adi yoksa var olarak algilanir
+//! let in var dan farki; blog scope da tanimladigini disarda goremezsin ,cikmaz perde icinden.ve iceride let ile yeni bir degisken tanimlayamazsin.disarida sorun yok tanimlanabilir.
 
 var sayi2=5;
 sayi2=10;
@@ -86,7 +87,7 @@ console.log("*********************************************************");
 
 //!!! global scope /  block scope / function scope
 
-//?global suslu yok.ortada heryerden, icerden disardan erisilir gorulur.
+//?global suslu yok.ortada heryerden, suslunun icerisindenden disarisindan erisilir gorulur.
 
 var ilk="GLOBAL";
 console.log(ilk);
@@ -104,7 +105,7 @@ console.log(ikinci);
 //! var a suslunun icindende disindan da erisebilirsin.degisiklik yaparsin.ayrica icerde tanimladigin degiskene disarda da ulasabildin.ikinci yazan.bu skinti
 
 
-//? var keywordu kullanilinca blok icinde ve disarisinda erisilebilr.blok icinde tanimlanan degiskene disardan da erisilebilir.digerlerinden farki bu
+//? var keywordu kullanilinca block icinde ve disarisinda erisilebilr.block icinde tanimlanan degiskene disardan da erisilebilir.digerlerinden farki bu
 
 console.log("**************************************************************");
 
@@ -160,3 +161,4 @@ console.log(erste);
 console.log(zweite);
 
 //! const ve let icin scope icinde olan scope(suslu) icinde kalir
+//! const ve let kilitli kasa, var kutu gibi dusun. Global sokak ortasi, const, let evin ici.
