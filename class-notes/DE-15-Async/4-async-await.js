@@ -29,7 +29,7 @@
 //1-
 const veriGetir = async () => {
 
-  // //!hatanın ne olduğunu kendi cümlemizle görebiliriz, ama try catch olmaksizin throw olursa, hata durumunda kod burada durur, alttaki kodlar çalışmaz. bu yüzden try-catch kullanmalıyız
+  // //!hatanın ne olduğunu kendi cümlemizle görebiliriz, ama try catch olmaksizin throw olursa, hata durumunda kod burada durur, alttaki kodlar çalışmaz. bu yüzden try-catch kullanmalıyız ki hata olsa bile devam eder.
 
   try {
     const response = await fetch("https://api.tvmaze.com/search/shows?q=girls");
