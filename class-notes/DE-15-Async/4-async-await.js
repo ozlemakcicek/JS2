@@ -12,6 +12,7 @@
 //* Aslinda dizilis olarak senkron mantiga benzeyen kod yazarak Asenkron kod yazmayı mumkun kilar.
 
 //* Await, promise-temelli herhangi bir fonksiyonun onune getirilerek getirildigi satirdaki kodun durdurulmasini saglar. Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
+
 //! JavaScript try anahtar kelimesi kod bloğundaki kodları çalışma zamanında test etmek için kullanılır.
 
 //! JavaScript catch anahtar kelimesi çalışma zaman hatası sonucu oluşan hataları ekrana yazdırmak için kullanılır.
@@ -22,10 +23,13 @@
 
 
 
+//! async await de bir fonksiyona esitlemek zorundayiz.fonksiyonun onune async yazariz!!!
+// fetch deki gibi ayni seyler yapilir ama then yerine await yazariz
+
+//1-
 const veriGetir = async () => {
-  // //!hatanın ne olduğunu kendi cümlemizle görebiliriz, ama try catch siz throw olursa, hata durumunda kod burada durur, alttaki kodlar çalışmaz. bu yüzden try-catch kullanmalıyız
 
-
+  // //!hatanın ne olduğunu kendi cümlemizle görebiliriz, ama try catch olmaksizin throw olursa, hata durumunda kod burada durur, alttaki kodlar çalışmaz. bu yüzden try-catch kullanmalıyız
 
   try {
     const response = await fetch("https://api.tvmaze.com/search/shows?q=girls");
@@ -45,8 +49,14 @@ const veriGetir = async () => {
     console.log("basarili basarisiz her durumda calis");
   }
 };
-veriGetir();
 
+//2-
+document.querySelector("button").onclick=()=>{
+  veriGetir();
+}
+
+
+//3-
 const ekranaBastir = (data) => {
   data.forEach((item) => {
     document.querySelector("section").innerHTML += `

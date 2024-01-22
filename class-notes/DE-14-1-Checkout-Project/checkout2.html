@@ -21,38 +21,39 @@
 
     <main class="container d-flex justify-content-center">
         <section class="bg-light w-75">
-            <!-- <form  class=" p-2">
-            <div class="mb-3">
-              <label for="add-name" class="form-label">Product Name</label>
-              <input type="text" class="form-control bir" id="add-name" required />
-            </div>
-            <div class="mb-3">
-              <label for="add-price" class="form-label">Product Price</label>
-              <input
-                type="number"
-                class="form-control iki"
-                id="add-price"
-                required
-              />
-            </div>
-         
-            <label for="add-adet" class="form-label">Product </label>
-            <div class="input-group mb-3">
+
+          <!--! İSTEĞE BAĞLI KISIM -->
+          <!-- buradaki input yapısı ile ekranda inputlar çıkacak, inputlara girilen veriler sepettekiler e eklenmeli =>şu şekilde
+                sepettekiler.push({
+               name: bir.value,
+               price: +iki.value,
+               adet: 1,
+               img: üc.value,
+             });,  
+             sepettekileri ekrana bastırma kodu (js de yazdığımız backtick li kısım) bir fonksiyonla sarmallanmalı ve, sepettekiler e inputtaki veriler eklenince, dizi ekrana tekrar bastırılacağı için, sepettekileri ekrana bastır fonksiyonunu çağırmak yeterli olur -->
            
-              <input
-                type="url"
-                class="form-control üc"
-                id="add-adet"
-                aria-describedby="basic-addon3"
-                required
-              />
+           
+            <div class=" p-2">
+              <div class="mb-3">
+                <label for="add-name" class="form-label">Product Name</label>
+                <input type="text" class="form-control bir" id="add-name" required />
+              </div>
+              <div class="mb-3">
+                <label for="add-price" class="form-label">Product Price</label>
+                <input type="number" class="form-control iki" id="add-price" required />
+              </div>
+            
+              <label for="add-adet" class="form-label">Product </label>
+              <div class="input-group mb-3">
+            
+                <input type="url" class="form-control üc" id="add-adet" aria-describedby="basic-addon3" required />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btnekle add-to-card btn btn-success btn-sm">
+                  <i class="fa-solid fa-cart-plus me-2"></i>Add To Cart
+                </button>
+              </div>
             </div>
-            <div class="text-center">
-              <button type="submit" class="btnekle add-to-card btn btn-success btn-sm">
-                <i class="fa-solid fa-cart-plus me-2"></i>Add To Cart
-              </button>
-            </div>
-          </form> -->
             <article id="urun-rowlari"></article>
 
             <article id="odeme-table"></article>
